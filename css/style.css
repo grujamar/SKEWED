@@ -104,3 +104,45 @@ a{
     font-family: 'PT Sans';
     font-size: 40px;
 }
+
+/**/
+.section-tittle{
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 40px;      
+}
+
+/*padding za sekcije koje imaju before i after*/
+.pseudo{
+    padding: 150px 0;/*100 na mobilnom + nesto*/
+}
+
+/*moze i preko grida*/
+.video-wrapper{
+    max-width: 800px;
+    margin: auto;
+}
+
+.video:before{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100px; /*is Invision*/
+    background: url('assets/top-left.png') no-repeat center center;
+    background-size: 100% 100%;
+    display: block;
+}
+
+.video:after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /*is Invision*/
+    background: url('assets/bottom-right.png') no-repeat center center;
+    background-size: 100% 100%;
+    display: block;
+}
