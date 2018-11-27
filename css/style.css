@@ -62,3 +62,38 @@ a{
 #main-menu{
     margin: 0 -15px; /*da ide od ivice do ivice. dodato i px-0 u <nav class="navbar navbar-expand-md navbar-light px-0">*/
 }
+
+/*MAIN*/
+.hello{
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.hello h2{
+    font-family: 'PT Sans';
+    font-size: 40px;
+}
+
+/*trougao*/
+.hello:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /*is Invision*/
+    background: url('assets/bottom-right.png') no-repeat bottom center;
+    background-size: 100% 100%;
+}
+
+/*gazimo bootstrap klase*/
+.text-warning{
+    color: #f7cc4b !important;
+}
+
+.bg-warning{
+    background-color: #f7cc4b !important;
+}
