@@ -57,6 +57,11 @@
         padding: 300px 0;
     }
 
+    .achievements .achievements-value{
+        font-size: 50px;
+        letter-spacing: -2.5px;
+    }
+
 }
 
 
@@ -112,6 +117,16 @@
         border-radius: 50%;
         overflow: hidden;
         margin: 0 auto 1rem;
+    }
+
+    .achievements .achievements-value{
+        font-size: 84px;
+        letter-spacing: -2.5px;
+    }
+
+
+    .testimonials .testimonials-item p{
+        font-size: 27px;
     }
 }
 

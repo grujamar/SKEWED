@@ -67,8 +67,7 @@ a{
 .hello{
     padding: 200px 0;
     background-size: cover;
-    background-position: center center;
-    
+    background-position: center center;   
 }
 
 .hello h2{
@@ -198,4 +197,135 @@ a{
 .team .team-title{
     font-size: 1.5rem;
     margin-bottom: 0.5rem !important;
+}
+
+.parallax{
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.parallax-wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.parallax:before,
+.parallax:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    display: block;
+    background-size: 100% 100% !important;
+}
+.parallax:before{
+    top:0;
+    background: url(assets/top-right.png) no-repeat;
+}
+.parallax:after{
+    bottom: 0;
+    background: url('assets/bottom-left.png') no-repeat;
+}
+
+.portfolio .hover{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #101010;
+    background: rgba(255,255,255,0.5);
+    font-size: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.portfolio figure:hover .hover{
+    display: block;
+}
+
+
+.achievements .fa{
+    font-size: 100px;
+    color:#000;
+    
+}
+
+.achievements .achievements-value{
+    font-size: 84px;
+    letter-spacing: -2.5px;
+}
+
+.testimonials-item{
+    max-width: 90%;
+    margin: auto;
+}
+
+.testimonials .testimonials-item p{
+    color:#000;
+    font-size: 20px;
+}
+
+.testimonials .testimonials-item .blockquote-footer{
+    font-size: 1rem;
+    color:#bbb;
+}
+
+
+
+.subscribe:before{
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('assets/top-right.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.subscribe .subscribe-form .form-control{
+    border-radius: 0;
+    background: transparent;
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.subscribe .subscribe-form .form-control:focus{
+    box-shadow: 0 0 5px #fff;
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+
+
+footer .social .fa{
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    border:2px solid #fff;
+    border-radius: 50%;
+    font-size: 28px;
+    transition: 0.5s linear;
+}
+
+footer .social .fa:hover{
+    background: #f7cc4b;
+    border:2px solid #f7cc4b;
 }
